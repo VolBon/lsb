@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bonetvol.lsb.MainActivity"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/colorsNumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/quantity"
+        android:layout_alignStart="@+id/quantity"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Colors"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="26dp"
+        android:text="Quantity"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Fast Delivery"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/switchStatus"
+        android:layout_alignStart="@+id/switchStatus"
+        android:layout_below="@+id/toggler"
+        android:layout_marginTop="10dp"
+        android:onClick="calculate"
+        android:text="Check prices" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Each in UAH:"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/switchStatus"
+        android:layout_alignStart="@+id/switchStatus" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total in $:"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/resultEach"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/resultEach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/toggler"
+        android:layout_alignStart="@+id/toggler"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:id="@+id/resultTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/resultEach"
+        android:layout_alignRight="@+id/resultEach"
+        android:text="__" />
+
+    <ToggleButton
+        android:id="@+id/toggler"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/switchStatus"
+        android:layout_alignBottom="@+id/switchStatus"
+        android:layout_alignLeft="@+id/colorsNumber"
+        android:layout_alignStart="@+id/colorsNumber"
+        android:text="air" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/toggler"
+        android:layout_alignStart="@+id/toggler"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
