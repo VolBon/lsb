@@ -27,17 +27,10 @@ class MainActivity : AppCompatActivity() {
     internal var quantity: Int = -1
     internal var colors: Int? = 0
     internal var kurs: Double? = 27.0
-    //internal var eachText:TextView? = null!!
-    //internal var totalText:TextView? = null!!
-    //internal var rate:TextView? = null!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //getting
-
-
-        //Log.i("Finally", String.valueOf(currencyRate));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
